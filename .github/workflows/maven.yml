@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    name: hh
+    name: action-practice
     runs-on: ubuntu-latest
 
     steps:
@@ -33,7 +33,7 @@ jobs:
         with:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
           SOURCE: "target/action-practise-0.0.1-SNAPSHOT.jar"
-          REMOTE_HOST: 192.168.92.11
+          REMOTE_HOST: 8.155.164.6
           REMOTE_USER: root
           TARGET: /root/springboot/github-actions.jar
           SCRIPT_AFTER: |
