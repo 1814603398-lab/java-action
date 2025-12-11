@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    name: action-practice03
+    name: action-practice04
     runs-on: ubuntu-latest
 
     steps:
