@@ -11,7 +11,7 @@ on:
 
 jobs:
   build:
-    name: action-practice
+    name: action-practice02
     runs-on: ubuntu-latest
 
     steps:
@@ -39,5 +39,5 @@ jobs:
           SCRIPT_AFTER: |
             cd /root/springboot
             pkill -f 'java -jar /root/springboot/github-actions.jar' || true
-            nohup java -jar /root/springboot/github-actions.jar
+            nohup java -jar /root/springboot/github-actions.jar > app.log 2>&1 &
 
